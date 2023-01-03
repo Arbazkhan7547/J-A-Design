@@ -1,0 +1,807 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color:#000013;
+}
+#main{
+    width: 100%;
+    background-color:#000013;
+}
+ .cursor{
+    pointer-events: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 9999999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+
+#fs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color:#000;
+    position: absolute;
+    z-index: 999999999;
+}
+#fs>h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-weight: 600;
+}
+#fs #b{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#nav{
+    position: fixed;
+    top: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5vw;
+    width: 100%;
+    height: 10vh;
+    z-index: 999;
+}
+#nav .logo{
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+}
+#nav .logo>h1{
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: gilroy;
+}
+#nav #r{
+    display: flex;
+    align-items: flex-start;
+    /* background-color: red; */
+}
+#nav #r .atext>a{
+    overflow: hidden;
+    /* background-color: red; */
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 400;
+    font-family: gilroy;
+    text-transform: uppercase;
+}
+#nav #r .atext>a:hover{
+    color: blue;
+}
+#nav #r .atext{
+    /* background-color: red; */
+    /* padding: 0 1vw; */
+    width: fit-content;
+    height: 5vh;
+    overflow: hidden;
+    /* background-color: red; */
+}
+#nav #r .atext>h1{
+    font-size: 1.5vw;
+    color: blue;
+    font-family: gilroy;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#nav #r .atext>h1 span{
+    display: inline-block;
+    transform: translateY(150%);
+}
+#nav #r .atext>a span{
+    display: inline-block;
+}
+#nav #r .atext .line{
+    position: relative;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: blue;
+}
+
+#r{
+    width: fit-content;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+#nav #r>i{
+    color: #fff;
+    font-size: 1.5vw;
+}
+#part1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+#text1{
+    padding-left: 5vw;
+    position: relative;
+    width: 100%;
+    height: 12vw;
+    position: absolute;
+    top: 0%;
+    overflow: hidden;
+    /* background-color: red; */
+}
+#part1 #text1>h1{
+    position: absolute;
+    top: 100%;
+    font-size: 10vw;
+    color: #fff;
+    font-family: gilroy;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#part1 #text1 span{
+    display: none;
+}
+#text1 #card1{
+    position: absolute;
+    right: 4%;
+    bottom: 8%;
+    width: 25vw;
+    height:0;
+    background-image: url(https://cdn.sanity.io/images/sjzl3ddh/production/72df2527db59ed1efb4392dd75e83dfd94fcfbf3-1608x2412.jpg?w=960);
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+}
+#part1 #text2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+    width: 100%;
+    height: 12vw;
+    position: absolute;
+    top: 26%;
+    left:0%;
+   /* background-color: yellow; */
+    overflow: hidden;
+}
+#part1 #text2>h1{
+    white-space: nowrap;
+    position: absolute;
+    top: 100%;
+    left: 23%;
+    font-size: 9.7vw;
+    color: #fff;
+    font-family: gilroy;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#part1 #text2 .elipse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 5%;
+    width: 18vw;
+    height: 7vw;
+    /* background-color: red; */
+    border-radius:  50%;
+    border: 2px solid #fff;
+}
+#part1 #text2 .elipse>h1{
+    color: #fff;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-weight: 500;
+}
+#text3{
+    /* background-color: red; */
+    width: 100%;
+    height: 12vw;
+    position: absolute;
+    top: 53%;
+    left:5%;
+    overflow: hidden;
+}
+#part1 #text3>h1{
+    white-space: nowrap;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    font-size: 10vw;
+    color: #fff;
+    font-family: gilroy;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#card2{
+    position: absolute;
+    left: 0%;
+    bottom: 10%;
+    width: 25vw;
+    height: 0vw;
+    background-image: url(https://cdn.sanity.io/images/sjzl3ddh/production/efc493a43ba95476a3030c1759dd33b80fc50974-1620x2430.jpg?w=960);
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+}
+#part2{
+    padding: 0 5vw;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+#part2 #text2{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    /* background-color: green; */
+} 
+#part2 #text2 .line1{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    /* background-color: red; */
+    /* overflow: hidden;     */
+}
+#part2 #text2 .line1 h1{
+    /* position: absolute;  */
+    transform: translateY(150%);
+
+    font-family: gilroy;
+    font-size: 2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.textdiv{
+    margin-top: 2vw;
+    display:flex;
+    gap: 1vw;
+    position: relative;
+    width: fit-content;
+    height:5vw;
+    opacity: 0;
+    /* background-color: red; */
+}
+.textdiv .texta{
+    position: relative;
+    width:fit-content;
+    height:100%;
+    overflow: hidden;
+    /* background-color: yellow; */
+}
+.textdiv .texta>h2{
+    font-size: 1.7vw;
+    font-family: gilroy;
+    font-weight: 500;
+    margin-top: .5vw;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.textdiv:hover .icon{
+    border: 2px solid blue;
+}
+.textdiv:hover .icon>i{
+    color:blue;
+}
+.textdiv:hover .texta>h2{
+    color: blue;
+}
+.textdiv .texta .line{
+    position: absolute;
+    left: 0;
+    width:0%;
+    height: 5px;
+    background-color: blue;
+}
+.textdiv .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    /* background-color: yellow; */
+    border-radius: 50%;
+}
+.icon>i{
+    font-size: 2vw;
+    color: #fff;
+}
+#btext{
+    position: absolute;
+    bottom: 10%;
+    width: 90%;
+    height: 10vh;
+    /* background-color: yellow; */
+    /* border-bottom: 2px solid #fff; */
+}
+#btext>h1{
+    font-size: 1.5vw;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-weight: 600;
+}
+.mline{
+    position: absolute;
+    bottom: 12%;
+    width: 90%;
+    height: 3px;
+    background-color: #11111c;
+    /* background-color: rgb(17,17,28); */
+    overflow: hidden;
+}
+.mline .line2{
+    position: absolute;
+    left:0;
+    width: 0%;
+    background-color: #fff;
+    height: 100%;
+}
+.part3{
+    position: relative;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 2vw;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+.part3 .img{
+    width: 40%;
+    height: 90%;
+    /* opacity: 0; */
+    background-color: red;
+}
+.part3 .img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.part3 .text{
+    padding: 0 1vw;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30%;
+    height: 90%;
+    /* opacity: 0; */
+    /* background-color: yellow; */
+}
+.part3 .text h1{
+      top: 2%;
+    position: absolute;
+    left: -40%;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-family: voyage;
+    font-weight: 500;
+    color: #fff;
+
+}
+.part3 .text>p{
+    margin-top: 3vw;
+    width: 70%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-family: gilroy;
+    font-weight: 600;
+}
+.part3 .text span{
+    color: grey;
+}
+.part4{
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+.part4 .img{
+    width: 40%;
+    height: 90%;
+    /* background-color: red; */
+}
+.part4 .img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.part4 .text{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items:  flex-start;
+    justify-content: center;
+    width: 30%;
+    height: 90%;
+    /* background-color: red; */
+}
+.part4 .text h1{
+      top: 4%;
+    position: absolute;
+    left:0%;
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-family: voyage;
+    font-weight: 500;
+    color: #fff;
+
+}
+.part4 .text>p{
+    margin-top: 3vw;
+    width: 70%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-family: gilroy;
+    font-weight: 600;
+}
+.part4 .text span{
+    color: grey;
+}
+.part5{
+    gap: 2vw;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+.part5 .img{
+    width: 40%;
+    height: 90%;
+    /* background-color: red; */
+}
+.part5 .img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.part5 .text{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30%;
+    height: 90%;
+    /* background-color: red; */
+}
+.part5 .text>h1{
+      top: 4%;
+    position: absolute;
+    left: -40%;
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-family: voyage;
+    font-weight: 500;
+    color: #fff;
+
+}
+.part5 .text>p{
+    margin-top: 2vw;
+    width: 70%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-family: gilroy;
+    font-weight: 600;
+}
+.part5 .text span{
+    color: grey;
+}
+.part5 .text .anitext{
+    position: absolute;
+    top: 12%;
+    left: 100%;
+    transform: rotate(25deg);
+    display: flex;
+    width:  9vw;
+    height: fit-content;
+    background-color:#fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+.part5 .text .anitext>h1{
+    white-space: nowrap;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-weight: 500;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.anitext::-webkit-scrollbar{
+    display: none;
+}
+.part6{
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+.part6 .img{
+    width: 40%;
+    height: 90%;
+    /* background-color: red; */
+}
+.part6 .img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.part6 .text{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30%;
+    height: 90%;
+    /* background-color: red; */
+}
+.part6 .text h1{    
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-family: voyage;
+    font-weight: 500;
+    color: #fff;
+
+}
+.part6 .text>p{
+    margin-top: 3vw;
+    width: 70%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-family: gilroy;
+    font-weight: 600;
+}
+.part6 .text span{
+    color: grey;
+}
+.part7{
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 2vw;
+    height: 100vh;
+    /* background-color: red; */
+}
+.part7 .img{
+    width: 40%;
+    height: 90%;
+    /* background-color: red; */
+}
+.part7 .img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.part7 .text{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30%;
+    height: 90%;
+    /* background-color: red; */
+}
+.part7 .text>h1{
+      top: 10%;
+    position: absolute;
+    left: -40%;
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-family: voyage;
+    font-weight: 500;
+    color: #fff;
+
+}
+.part7 .text>p{
+    margin-top: 2vw;
+    width: 70%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-family: gilroy;
+    font-weight: 600;
+}
+.part7 .text span{
+    color: grey;
+}
+.part7 .text .anitext{
+    position: absolute;
+    top: 17%;
+    left: 70%;
+    transform: rotate(25deg);
+    display: flex;
+    width:  9vw;
+    height: fit-content;
+    background-color:#fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+.part7 .text .anitext>h1{
+    white-space: nowrap;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-weight: 500;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.anitext::-webkit-scrollbar{
+    display: none;
+}
+.part8{
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+.part8 .img{
+    width: 40%;
+    height: 90%;
+    /* background-color: red; */
+}
+.part8 .img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.part8 .text{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30%;
+    height: 90%;
+    /* background-color: red; */
+}
+.part8 .text h1{    
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-family: voyage;
+    font-weight: 500;
+    color: #fff;
+
+}
+.part8 .text>p{
+    margin-top: 3vw;
+    width: 70%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-family: gilroy;
+    font-weight: 600;
+}
+.part8 .text span{
+    color: grey;
+}
+#bnav{
+    position: relative;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+     align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 15vh;
+    /* background-color: red; */
+    /* border-top: 2px solid #fff; */
+    z-index: 9999999999;
+}
+#bnav h1{
+    display:flex;
+    align-items: center;
+    gap: .3 vw;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+#bnav h2{
+    display:flex;
+    align-items: center;
+    gap: .3 vw;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: gilroy;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+#bnav #c{
+    display: flex;
+    align-items: center;
+}
+#bnav h1:hover{
+    color: blue;
+}
+.mline:nth-child(1){
+    bottom: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+#cursor{
+    /* pointer-events: none; */
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    background-color:red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@keyframes scroll{
+    0%{
+       transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 20px));
+    }
+ }
+
