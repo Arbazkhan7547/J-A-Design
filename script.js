@@ -82,7 +82,7 @@ function parAnimation(){
        trigger:"#part2",
        start:"top 60%"
     },
-    y:10,
+    y:0,
     stagger:.1,
     ease:Expo.easeInout,
     duration:.5

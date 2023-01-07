@@ -263,13 +263,11 @@ html,body{
     position: relative;
     width: fit-content;
     height: fit-content;
-    /* background-color: red; */
-    /* overflow: hidden;     */
+    overflow: hidden; 
 }
 #part2 #text2 .line1 h1{
     /* position: absolute;  */
     transform: translateY(150%);
-
     font-family: gilroy;
     font-size: 2vw;
     font-weight: 600;
