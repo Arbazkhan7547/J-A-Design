@@ -1,5 +1,5 @@
 @font-face{
-    font-family:gilroy;
+    font-family:"gilroy";
     src: url("./fonts1/fonts/Gilroy-Regular.otf");
     font-weight:  100;
 }
@@ -9,37 +9,37 @@
     font-weight:  200;
 }
 @font-face{
-    font-family:gilroy;
+    font-family:"gilroy";
     src: url("./fonts1/fonts/Gilroy-Regular.otf");
     font-weight:  300;
 }
 @font-face{
-    font-family:gilroy;
+    font-family:"gilroy";
     src: url("./fonts1/fonts/Gilroy-Medium.otf");
     font-weight:  400;
 }
 @font-face{
-    font-family:gilroy;
+    font-family:"gilroy";
     src: url("./fonts1/fonts/Gilroy-Medium.otf");
     font-weight:  500;
 }
 @font-face{
-    font-family:gilroy;
+    font-family:"gilroy";
     src: url("./fonts1/fonts/Gilroy-Bold.otf");
     font-weight:  600;
 }
 @font-face{
-    font-family:gilroy;
+    font-family:"gilroy";
     src: url("./fonts1/fonts/Gilroy-Bold.otf");
     font-weight:  700;
 }
 @font-face{
-    font-family:gilroy;
+    font-family:"gilroy";
     src: url("./fonts1/fonts/Gilroy-Bold.otf");
     font-weight:  800;
 }
 @font-face{
-    font-family:gilroy;
+    font-family:"gilroy";
     src: url("./fonts1/fonts/Gilroy-Bold.otf");
     font-weight:  900;
 }
@@ -102,7 +102,7 @@ html,body{
     padding:5vw;
     width: 100%;
     height: 10vh;
-    z-index: 999;
+    z-index: 9999999999;
 }
 #nav .logo{
     display: flex;
@@ -512,7 +512,7 @@ html,body{
     color: #fff;
     text-transform: uppercase;
     font-size: 1.5vw;
-    font-family: gilroy;
+    font-family:gilroy;
     font-weight: 600;
 }
 .part4 .text span{
@@ -845,3 +845,246 @@ html,body{
     }
  }
 
+@media (max-width:600px){
+    #text1 #card1{
+        display: none;
+        width: 50vw;
+        height: 20vw;
+    }
+    #part1 #text2 .elipse{
+        flex-direction: column;
+    }
+    #nav{
+        margin-top: 10vw;
+        padding: 0 2vw;
+    }
+    #nav .logo>h1{
+        font-size: 3vw;
+    }
+    #nav #r .atext>a{
+        font-size: 3vw;
+    }
+    #nav #r>i{
+        font-size: 5vw;
+    }
+    #nav #r{
+        margin-top: 4vw;
+    }
+    #part1{
+        height: 80vh;
+    }
+    #text1{
+        top: 25%;
+    }
+    #part1 #text1>h1{
+        font-size: 12vw;
+    }
+    #part1 #text2{
+        top: 35%;
+        height: 35vw;
+    }
+    .part3 .text{
+        width: 100%;
+    }
+    .part3 .img{
+        width: 100%;
+    }
+    .part3 .text h1{
+        left: 0;
+        font-size: 15vw;
+    }
+    .part3 .text>p{
+        width: 80%;
+        font-size: 4vw;
+        margin-top: 15vw;
+    }
+    .part3{
+        gap: 5vw;
+        flex-direction: column-reverse;
+    }
+    .cursor{
+        display: none;
+    }
+    .part4 .text{
+        width: 100%;
+    }
+    .part4 .img{
+        width: 100%;
+    }
+    .part4 .text h1{
+        left: 0;
+        font-size: 15vw;
+    }
+    .part4 .text>p{
+        width: 80%;
+        font-size: 4vw;
+        margin-top: 15vw;
+    }
+    .part4{
+        margin-top: 15vw;
+        gap: 5vw;
+        flex-direction: column;
+    }
+    #card2{
+        display: none;
+    }
+    #part1 #text3>h1{
+        font-size: 13vw;
+        left: 1%;
+    }
+    #text3{
+        top: 55%;
+        left: 2%;
+        height: 20vw
+    }
+    #part1 #text2 .elipse{
+        width: 40vw;
+        height: 15vw;
+        top: 2%;
+    }
+    #part1 #text2 .elipse>h1{
+        font-size: 7vw;
+    }
+    #part1 #text2>h1{
+        left: 2%;
+        margin-top: 20vw;
+        font-size: 12vw;
+        bottom: 0;
+    }
+    #part2 #text2{
+        width: 100%;
+        left: 0;
+    }
+    #part2 #text2 .line1 h1{
+        font-size: 4vw;
+    }
+    .icon>i{
+        font-size: 7vw;
+    }
+    .textdiv .texta>h2{
+        font-size: 5vw;
+    }
+    .textdiv{
+        gap: 3vw;
+        height: 20vw;
+        align-items: center;
+    }
+    .textdiv .texta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .textdiv .texta .line{
+        margin-top: 8vw;
+    }
+    #part2{
+        height: 70vh;
+    }
+    #btext>h1{
+        font-size: 5vw;
+    }
+    .part5 .text .anitext{
+        top: 5%;
+        left: 70%;
+        width: 30vw;
+    }
+    .part5 .text{
+        width: 100%;
+    }
+    .part5 .img{
+        width: 100%;
+    }
+    .part5 .text h1{
+        left: 0;
+        font-size: 15vw;
+    }
+    .part5 .text>p{
+        width: 80%;
+        font-size: 4vw;
+        margin-top: 15vw;
+    }
+    .part5{
+        margin-top: 15vw;
+        gap: 5vw;
+        flex-direction: column;
+    }
+    .part6 .text{
+        width: 100%;
+    }
+    .part6 .img{
+        width: 100%;
+    }
+    .part6 .text h1{
+        left: 0;
+        font-size: 15vw;
+    }
+    .part6 .text>p{
+        width: 80%;
+        font-size: 4vw;
+        margin-top: 15vw;
+    }
+    .part6{
+        margin-top: 15vw;
+        gap: 5vw;
+        flex-direction: column;
+    }
+     .part7 .text{
+        width: 100%;
+    }
+     .part7 .img{
+        width: 100%;
+    }
+     .part7 .text h1{
+        left: 0;
+        font-size: 15vw;
+    }
+    .part7 .text .anitext{
+        top: 10%;
+        left: 70%;
+        width: 30vw;
+    }
+     .part7 .text>p{
+        width: 80%;
+        font-size: 4vw;
+        margin-top: 25vw;
+    }
+    .part7{
+        margin-top: 15vw;
+        gap: 5vw;
+        flex-direction: column;
+    }
+    .part8 .text{
+        width: 100%;
+    }
+    .part8 .img{
+        width: 100%;
+    }
+    .part8 .text h1{
+        left: 0;
+        font-size: 15vw;
+    }
+    .part8 .text>p{
+        width: 80%;
+        font-size: 4vw;
+        margin-top: 15vw;
+    }
+    .part8{
+        margin-top: 15vw;
+        gap: 15vw;
+        flex-direction: column;
+    }
+    #bnav h2{
+        font-size: 5vw;
+        display: none;
+    }
+    #bnav #c h1{
+        font-size: 4vw;
+    }
+    #bnav>h1{
+        font-size: 4vw;
+    }
+    #bnav>h1 i{
+        font-size: 7vw;
+    }
+}
